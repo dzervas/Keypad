@@ -104,8 +104,8 @@ public:
 	void setHoldTime(uint);
 	void addEventListener(void (*listener)(char));
 	void addStatedEventListener(void (*listener)(char, KeyState));
-	int findInList(char keyChar);
-	int findInList(int keyCode);
+	int8_t findInList(char keyChar);
+	int8_t findInList(byte keyCode);
 	char waitForKey();
 	bool keyStateChanged();
 	byte numKeys();
